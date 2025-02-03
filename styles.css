@@ -12,6 +12,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     overflow: hidden; /* Esto bloquea las barras de desplazamiento */
+    touch-action: none; /* Evita gestos táctiles como desplazamiento */
 }
 
 /* ------------------ */
@@ -223,6 +224,7 @@ video.background {
 /* Botones */
 .buttons {
     margin-bottom: 200px;
+    bottom: 20vh; /* Ajusta los botones a 20% desde la parte inferior */
 }
 
 /* Estilo base de los botones */
