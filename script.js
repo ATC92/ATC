@@ -83,6 +83,7 @@ window.onload = function() {
 
     // Detecta cuando el mouse entra al área del botón "No"
     buttonNo.addEventListener("mouseenter", hideButton);
+    buttonNo.addEventListener("touchstart", hideButton); // Para móviles
 };
 
 
