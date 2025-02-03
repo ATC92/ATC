@@ -274,11 +274,11 @@ button.hidden {
     button {
         width: 80%;
         font-size: 16px;
-        margin-bottom: 10px;
+        margin-bottom: 40px;
     }
 
     h1 {
-        font-size: 30px; /* Reducir tamaño del texto en móvil */
+        font-size: 25px; /* Reducir tamaño del texto en móvil */
         margin-top: 60px;
     }
 
@@ -291,5 +291,6 @@ button.hidden {
         height: auto;
         min-height: 100%;
         min-width: 100%;
+        position: fixed;
     }
 }
