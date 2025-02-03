@@ -1,3 +1,6 @@
+/* ------------------ */
+/* 🟣 CONFIGURACIÓN GENERAL */
+/* ------------------ */
 body {
     background-color: #ffccff; /* Fondo rosa */
     font-family: Arial, sans-serif;
@@ -11,7 +14,9 @@ body {
     overflow: hidden; /* Esto bloquea las barras de desplazamiento */
 }
 
-/* Petalos cayendo */
+/* ------------------ */
+/* 🟣 PETALOS CAYENDO */
+/* ------------------ */
 .petalo {
     position: absolute;
     width: 40px; /* Tamaño de la imagen */
@@ -34,7 +39,9 @@ body {
     }
 }
 
-/* Texto principal */
+/* ------------------ */
+/* 🟣 TEXTO PRINCIPAL */
+/* ------------------ */
 h1 {
     font-size: 50px;
     font-weight: bold;
@@ -253,18 +260,36 @@ button.hidden {
     visibility: hidden; /* Oculta el botón completamente */
 }
 
-/* Ajustes generales para móviles */
+
+/* ------------------ */
+/* 🟣 AJUSTES PARA MÓVILES */
+/* ------------------ */
 @media (max-width: 600px) {
     .buttons {
         display: flex;
-        flex-direction: column; /* Apilar botones en móvil */
+        flex-direction: column;
         align-items: center;
     }
 
     button {
-        width: 80%; /* Hacer los botones más anchos en móvil */
-        font-size: 16px; /* Reducir el tamaño de letra */
-        margin-bottom: 10px; /* Espacio entre botones */
+        width: 80%;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    h1 {
+        font-size: 30px; /* Reducir tamaño del texto en móvil */
+        margin-top: 60px;
+    }
+
+    .petalo {
+        width: 25px;
+        height: 25px;
+    }
+
+    video.background {
+        height: auto;
+        min-height: 100%;
+        min-width: 100%;
     }
 }
-
