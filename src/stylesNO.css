@@ -1,0 +1,18 @@
+body {
+    background-color: #ffccff; /* Fondo rosa */
+    font-family: Arial, sans-serif;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.message {
+    font-size: 50px;
+    margin-top: 20px;
+}
+

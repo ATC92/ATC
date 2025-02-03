@@ -1,0 +1,73 @@
+body {
+    background-color: #ffccff; /* Fondo rosa */
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+/* Estilo para la Imagen */
+img {
+    width: 300px; /* Ancho fijo de 300px */
+    height: auto; /* Alto ajustado automáticamente para mantener la proporción */
+}
+
+/* Estilo para las imágenes dentro de la carta */
+.imagenes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Dos columnas */
+    gap: 5px;
+    margin-top: 35px;
+}
+
+.imagenes img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgba(255, 105, 180, 0.6);
+}
+
+/* Estilo para la carta */
+.carta {
+    position: absolute;
+    top: -200px;  /* Comienza arriba de la ventana */
+    left: 50%;
+    transform: translateX(-50%);  /* Centra horizontalmente */
+    background-color: rgba(255, 255, 255, 0.95);  /* Fondo blanco con 80% de opacidad */
+    padding: 80px;
+    width: 80%;
+    max-width: 1000px;
+    box-shadow: 0 0 15px rgba(255, 105, 180, 0.8); /* Resplandor rosa */
+    border-radius: 10px;
+    opacity: 0;
+    animation: aparecerCarta 3s ease-out forwards; /* Animación de aparición */
+}
+
+/* Animación para que la carta aparezca lentamente desde arriba */
+@keyframes aparecerCarta {
+    0% {
+        top: -400px;
+        opacity: 0;
+    }
+    100% {
+        top: 40%;
+        opacity: 1;
+    }
+}
+
+/* Estilo del texto de la carta */
+.carta p {
+    font-size: 20px;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Añadir un resplandor al texto de la carta */
+.carta p {
+    text-shadow: 0 0 10px rgba(255, 105, 180, 1); /* Resplandor rosa */
+}
